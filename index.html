@@ -14,38 +14,60 @@
         }
         h1 {
             color: #C08297; /* Rosa coral */
-            font-size: 32px;
+            font-size: 36px;
             margin-bottom: 5px;
+            font-weight: bold;
         }
         .subtitle {
             color: #B5A0E8; /* Morado/Lavanda */
-            font-size: 16px;
+            font-size: 18px;
             margin-bottom: 30px;
+            letter-spacing: 1px;
         }
         .container {
             max-width: 800px;
             margin: 0 auto;
+        }
+        /* CUADRÍCULA PARA MOSTRAR VARIAS IMÁGENES */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        .product-card {
+            background-color: #1E1E1E;
+            border: 2px solid #C08297;
+            border-radius: 16px;
+            padding: 12px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+        }
+        .product-image {
+            width: 100%;
+            height: 250px;
+            border-radius: 12px;
+            object-fit: cover;
         }
         .intro-text {
             background-color: #1E1E1E;
             padding: 20px;
             border-radius: 12px;
             margin-bottom: 30px;
-            border: 1px solid #C08297;
+            border: 1px solid #8B7E74;
             font-size: 15px;
             line-height: 1.6;
         }
         .btn-whatsapp {
             background-color: #25D366;
             color: white;
-            padding: 15px 30px;
+            padding: 15px 35px;
             font-size: 18px;
             font-weight: bold;
             text-decoration: none;
             border-radius: 50px;
             display: inline-block;
-            margin-top: 20px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            margin-top: 15px;
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
         }
     </style>
 </head>
@@ -53,15 +75,38 @@
 
     <div class="container">
         <h1>Woven Hearts</h1>
-        <div class="subtitle">Llaveros y Portacelulares Personalizados</div>
+        <div class="subtitle">✨ Llaveros y Portacelulares Personalizados ✨</div>
 
         <div class="intro-text">
             ¿Quién dijo que tu celular tiene que ser aburrido? 🧵💖 Dale a tu teléfono el outfit más suave y tierno de todos. Fundas tejidas, de peluche y denim hechas con puro amor y detalles que enamoran. 🧸✨💎 Además, ¡puedes combinarlas con nuestros colgantes de resina personalizados con tu inicial o flores reales! 🌸✨
         </div>
 
-        <p>📍 Atendiendo con mucho amor desde Llata, Huamalíes, Huánuco</p>
+        <h2 style="color: #C08297; margin-top: 40px;">📸 Nuestro Catálogo Exclusivo</h2>
+        
+        <!-- GALERÍA DE PRODUCTOS CON TUS FOTOS DE WHATSAPP -->
+        <div class="gallery">
+            <!-- Producto 1 -->
+            <div class="product-card">
+                <img src="WhatsApp Image 2026-09-25 at 5.48.09 PM.jpeg" alt="Modelo 1" class="product-image">
+                <p style="margin-top: 10px; font-weight: bold;">Llavero Macramé Rosa</p>
+            </div>
 
-        <!-- Botón de conversión UX a WhatsApp -->
+            <!-- Producto 2 -->
+            <div class="product-card">
+                <img src="WhatsApp Image 2026-09-25 at 5.48.10 PM.jpeg" alt="Modelo 2" class="product-image">
+                <p style="margin-top: 10px; font-weight: bold;">Portacelular Soft Premium</p>
+            </div>
+
+            <!-- Producto 3 -->
+            <div class="product-card">
+                <img src="WhatsApp Image 2026-09-25 at 5.48.11 PM.jpeg" alt="Modelo 3" class="product-image">
+                <p style="margin-top: 10px; font-weight: bold;">Diseño Personalizado Especial</p>
+            </div>
+        </div>
+
+        <p style="color: #A99B91; font-size: 14px; margin-top: 30px;">📍 Hecho a mano con mucho amor desde Llata, Huamalíes, Huánuco</p>
+
+        <!-- Botón de WhatsApp -->
         <a href="https://wa.me." class="btn-whatsapp" target="_blank">
             Pedir por WhatsApp 💬
         </a>
